@@ -6,7 +6,8 @@ This repository contains my completed coursework for the W3Cx HTML5 edX training
 - **Chapter 1:** HTML basics and structure
 - **Chapter 2:** Content grouping and formatting
 - **Chapter 3:** Lists, images, and CSS selectors
-- **Chapter 4:** (In progress)
+- **Chapter 4:** borders, padding, width , and text centering ,resizing, etc. 
+- **Chapter 5:** introduction to tables, (in progress)
 
 ## Instructions
 Open any `.html` file inside the chapter folders using a web browser.
