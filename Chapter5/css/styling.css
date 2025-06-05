@@ -1,0 +1,5 @@
+table.eg1, th.eg1, td.eg1 { border: 1px solid black; }
+
+table.eg2, th.eg2, td.eg2 { border: thin dashed black; }
+
+table.eg3, th.eg3, td.eg3 { border: initial; }
