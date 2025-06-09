@@ -1,0 +1,16 @@
+{
+<<<<<<< HEAD
+    "folders": [
+        {
+            "path": "../Module-1-HTML-CSS/Chapter6"
+        }
+    ]
+=======
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+>>>>>>> 7f4006ad3f55d304663f5573e964c4f2ebc366f7
+}

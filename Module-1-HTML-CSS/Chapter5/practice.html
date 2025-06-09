@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Styling your table, width and height</title>
+  <link rel="stylesheet" href="css/styling.css">
+</head>
+
+<body>
+  <p>The width of the first whole column is decided by the width of the cell with most content:</p>
+  <table>
+    <tr>
+      <th>Names</th>
+      <th>Profession</th>
+    </tr>
+    <tr>
+      <td>Michael Fernandez</td>
+      <td>Doctor</td>
+    </tr>
+    <tr>
+      <td>Amy Frank</td>
+      <td>Computer Engineer</td>
+    </tr>
+  </table>
+
+  <p>Specifying the width for one cell will affect the whole column. Width is set in percentage relative to the whole
+    table:</p>
+  <table>
+    <table class="eg1">
+      <tr>
+        <th>Names</th>
+        <th>Profession</th>
+      </tr>
+      <tr>
+        <td>Michael Fernandez</td>
+        <td>Doctor</td>
+      </tr>
+      <tr>
+        <td>Amy Frank</td>
+        <td>Computer Engineer</td>
+      </tr>
+    </table>
+  </table>
+
+  <p>Specifying the height for one cell will affect the whole row. Height is set in fixed pixels:</p>
+  <table>
+    <table class="eg2">
+      <tr>
+        <th>Names</th>
+        <th>Profession</th>
+      </tr>
+      <tr>
+        <td>Michael Fernandez</td>
+        <td>Doctor</td>
+      </tr>
+      <tr>
+        <td>Amy Frank</td>
+        <td>Computer Engineer</td>
+      </tr>
+    </table>
+  </table>
+
+  <p>Specifying 100% for table width will occupy the whole width of the parent element:</p>
+  <table class="eg3">
+    <tr>
+      <th>Names</th>
+      <th>Profession</th>
+    </tr>
+    <tr>
+      <td>Michael Fernandez</td>
+      <td>Doctor</td>
+    </tr>
+    <tr>
+      <td>Amy Frank</td>
+      <td>Computer Engineer</td>
+    </tr>
+  </table>
+
+
+</body>
+
+</html>

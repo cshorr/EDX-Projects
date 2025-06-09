@@ -1,0 +1,25 @@
+# Ignore all image files
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+
+# Ignore macOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Ignore any temp/backup files
+*.bak
+*.tmp
+
+# Ignore the entire assets folder (if it's just for media)
+assets/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
