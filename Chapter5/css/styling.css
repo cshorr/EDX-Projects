@@ -1,0 +1,8 @@
+body {
+  background-color: pink;
+}
+table.eg1 th, table.eg1 td { border: 3px solid black; }
+
+table.eg2th,table.eg2 td { border: thin dashed black; }
+
+table.eg3, th.eg3, td.eg3 { border: initial; }
