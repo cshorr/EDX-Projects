@@ -15,3 +15,11 @@ Thumbs.db
 # Ignore any temp/backup files
 *.bak
 *.tmp
+
+# Ignore the entire assets folder (if it's just for media)
+assets/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
