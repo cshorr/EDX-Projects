@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+   <p>
+  This is <span style="font-weight: bold; color: red; text-decoration: underline;">
+  bold, red, and underlined
+  </span> text.
+</p> 
+</body>
+</html>
