@@ -1,0 +1,42 @@
+body {
+    margin: 50px;
+    background-color: rgb(170, 201, 228);
+
+}
+
+.fc * {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(132, 162, 211);
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.fc {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 50vh;
+
+}
+
+.fc>* {
+    flex: 1;
+}
+
+.fc header,
+.fc footer {
+    flex: 0 1 100vw;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+aside,
+main,
+section {
+    font-family: "Times new york", sans-serif;
+    font-size: 25px;
+    text-indent: 10px;
+
+}
