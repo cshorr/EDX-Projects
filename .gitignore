@@ -1,5 +1,9 @@
-
-
+# Ignore all image files
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
 
 # Ignore macOS and Windows system files
 .DS_Store
