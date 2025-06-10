@@ -1,0 +1,74 @@
+nav {
+    background: lightgreen;
+    width: 7%;
+   position: fixed;
+   top: 4rem;
+   opacity: 0.8; ;
+
+}
+nav:hover {
+    opacity: 1.0;
+}
+
+img {
+    width: 400px;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+article {
+    margin-left: 40px;
+    min-width: 30rem;
+    max-width: 50rem;
+    margin: 150px;
+    margin-top: 4rem;
+
+}
+
+h1 {
+    background: #bb6a05;
+    text-align: center;
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+body {
+    margin: 0px;
+    font-size: 130%;
+    font-weight: bold;
+    background-color: #c29b40;
+
+}
+
+nav ul {
+    padding-left: 25px;
+}
+
+table {
+    margin-left: 20px;
+    border-collapse: collapse;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+tr {
+    border-bottom: 3px solid grey;
+}
+
+td.ingredient {
+    text-align: left;
+    padding-right: 18px;
+    
+}
+
+td.amount {
+    text-align: right;
+    padding-left: 18px;
+    font-size: 19px;
+    font-weight: bold;
+}
+p {
+
+}
