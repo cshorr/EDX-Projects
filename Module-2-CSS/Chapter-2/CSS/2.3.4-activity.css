@@ -1,23 +1,26 @@
 
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>My HTML page</title>
-      <link rel="stylesheet" href="css/2.3.4-activity.css">
-   </head>
-   <body>
-      <h1>My H1 header</h1>
-      <p> This is a block of text to represent a paragraph that you will want to style. This might be an explanation of the list that follows, it is all contained within a single paragraph tag.
-      </p>
-      <ul>
-         <li>This is list item 1</li>
-         <li>Item 2 in the list</li>
-         <li>The third item in the list</li>
-         <li>Item 4 completes the list</li>
-      </ul>
-   </body>
-</html>
+body {
+background-color: purple;
+}
 
+h1 {
+font-size: 350%;
+color: white;
+}
+p {
+  font-size: 30px;
+  color: fuchsia;
 
+  text-shadow:9px 9px 6px black;
+    
+   
 
+}
+ul {
+  border-color: rgb(229, 11, 229);
+  border-width: 15px;
+  border-style: double;
+ 
+  background-color: silver; 
+  font-size: 30px;
+}
