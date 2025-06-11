@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(213, 218, 197);
+    margin: 2px 20px;
+    padding: 0%;
+}
+
+h1 {
+    font-size: 4rem;
+    border: 10px solid fuchsia;
+}
+
+h2 {
+font-weight: 3rem;
+font-size: 2.5rem;
+}
+
+h3 {
+    border: 10px solid fuchsia;
+    border-style: groove;
+    border-style: groove;
+    background-color: rgb(78, 214, 214);
+}
+
+h1,
+h2 {
+
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border: 7px solid rgb(17, 117, 184);
+    border-style: groove;
+    background-color: rgb(78, 163, 180);
+}
+
+ol,
+ul,
+p,
+.hobbies {
+    font-size: 1.1rem;
+    font-weight: 450;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-button {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Slack-specific color */
+.social-button.slack {
+    background-color: #4A154B;
+}
+
+.social-button.slack:hover {
+    background-color: #7B3F8B;
+}
+
+/* LinkedIn-specific color */
+.social-button.linkedin {
+    background-color: #0A66C2;
+}
+
+.social-button.linkedin:hover {
+    background-color: #004182;
+}
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 0%;  /* Reduce this if it's too far down */
+    margin-bottom:5%;
+}
+
+
+
+/* And in addition, you must employ the following styles:
+
+3 different font colors
+2 different background colors
+a serif font
+a sans-serif font
+italic text
+bold text
+1 border
+extra margin between the edge of the screen and your content
+extra padding around your list items */
