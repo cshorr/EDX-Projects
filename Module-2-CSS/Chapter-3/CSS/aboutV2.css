@@ -1,0 +1,141 @@
+body {
+    background-color: beige;
+    
+}
+
+.name {
+border: 4px solid darkred;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #f8f8f8;
+  color: darkred;
+  border-radius: 25px;
+    max-width: 800px;
+    margin-left: 20px;
+  margin-right: 0 auto;
+}
+.quote {
+  border: 2px solid darkred;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  color: darkred;
+  font-style: italic;
+  border-radius: 25px;
+    max-width: 800px;
+    margin-left: 20px;
+  margin-right: 0 auto;
+}
+#education {
+     color: darkred;
+      max-width: 800px;
+  margin: 0 auto;
+background-color: beige;
+    
+}
+
+.edu-item, 
+#experience,
+#favorites
+{
+    border: 2px solid darkred;
+  padding: 5px;
+  margin-top: 15px;
+  background-color: #f8f8f8;
+  color: darkred;
+  border-radius: 25px;
+  font-size: 20px;
+     max-width: 800px;
+    margin-left: 10px;
+  margin-right: 0 auto;
+ ;
+}
+ 
+footer {
+      display: flex;
+    gap: 2px;
+    margin-top: 2%;  
+    margin-bottom:5%;
+}
+.social-links {
+     display: flex;
+  justify-content: center; /* centers the links */
+  gap: 20px;
+  margin: 10px;
+}
+.social-button {
+    padding: 10px 15px;
+    background-color: #954545;
+    color: white;
+    text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}   
+.social-button:hover {
+  background-color: #bbb;
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slack-specific color */
+.social-button.slack {
+    background-color: #4A154B;
+}
+
+.social-button.slack:hover {
+    background-color: #7B3F8B;
+}
+
+/* LinkedIn-specific color */
+.social-button.linkedin {
+    background-color: #0A66C2;
+}
+
+.social-button.linkedin:hover {
+    background-color: #004182;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 0%;
+    /* Reduce this if it's too far down */
+    margin-bottom: 5%;
+}
