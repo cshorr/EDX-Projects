@@ -1,5 +1,6 @@
 var canvas, ctx;
-window.onload = init () {
+window.onload = init 
+function init() {
   console.log("Canvas init running");
 
   const canvas = document.getElementById("mycanvas");
