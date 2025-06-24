@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Split the Bill</title>
+</head>
+<body>
+  <h2>Spl it the Bill+ Tip</h2>
+
+  <label>Total Bill ($): <input type="number" id="bill" /></label><br>
+  <label>Tip (%)       : <input type="number" id="tip" value="15" /></label><br>
+  <label>People        : <input type="number" id="people" value="2" /></label><br><br>
+
+  <button onclick="calculate()">Split It!</button>
+
+  <p id="result"></p>
+
+  <script>
+    function calculate() {
+      const bill = document.getElementById("bill").valueAsNumber;
+      const tip = document.getElementById("tip").valueAsNumber;
+      const people = document.getElementById("people").valueAsNumber;
+
+      const total = bill + (bill * (tip / 100));
+      const split = total / people;
+
+      document.getElementById("result").innerText = 
+        `Each person owes: $${split.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
