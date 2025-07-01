@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 #myCanvas {
   border:1px solid black;
 }
 body {
     background-color: rgb(232, 159, 56);
+=======
+#myCanvas {
+  border:1px solid black;
+}
+body {
+    background-color: rgb(232, 159, 56);
+>>>>>>> 415ce477eb150ef674c79313568c506df47c1b9d
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="eng">
     <head>
@@ -56,4 +57,64 @@
 <body>
     <canvas id="square" width="500" height="500" ></canvas>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <title>square</title>
+        <style>
+             canvas {
+        border: 4px solid black;
+    } 
+    </style>
+   <script>
+        var canvas, ctx;
+        function init () {
+            canvas = document.getElementById("square");
+            ctx = canvas.getContext ("2d")
+            drawSquare (0,0,)
+             let pad = 10;
+        
+        }
+       
+
+        function drawSquare(x,y) {
+            ctx.fillStyle = "forestgreen"; 
+            ctx.fillRect (x, y, 500, 500)
+
+           ctx.fillStyle = "red";
+           ctx.fillRect (12, 12, 482, 482);
+           ctx.lineWidth = 6;
+           ctx.strokeStyle = "yellow";
+           ctx.strokeRect(10, 10, 480, 480);
+           
+           ctx.fillStyle = "lightblue";
+           ctx.fillRect (45, 45, 410, 410);
+           ctx.lineWidth = 6;
+           ctx.strokeStyle = "orange";
+           ctx.strokeRect(26, 28, 445, 445);
+
+           	ctx.fillStyle = "blue";
+           ctx.fillRect (80, 80, 345, 345);
+           ctx.lineWidth = 6;
+           ctx.strokeStyle = "purple";
+           ctx.strokeRect(60, 60, 385, 385);
+               	ctx.fillStyle = "orangered";
+           ctx.fillRect (100, 100, 305, 305);
+           ctx.lineWidth = 8;
+           ctx.strokeStyle = "chartreuse";
+           ctx.strokeRect(120, 120, 270, 270);
+        }
+        
+        window.onload = init
+        ctx.fillRect(x + pad, y + pad, size - pad * 2, size - pad * 2);
+
+    </script> 
+</head>
+
+<body>
+    <canvas id="square" width="500" height="500" ></canvas>
+</body>
+>>>>>>> 415ce477eb150ef674c79313568c506df47c1b9d
 </html>

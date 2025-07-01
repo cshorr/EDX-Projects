@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,3 +87,93 @@
     <button onclick="startAnimation()"> Unicorn Flavored Black Hole</button>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Unicorn Black Hole</title>
+    <style>
+        canvas {
+            border: 4px solid black;
+            display: block;
+            margin: 0 auto;
+            background-color: black;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+    </style>
+    <script>
+        let canvas, ctx;
+        let pad = 0;
+        const step = 8;
+        const size = 500;
+        let animating = false;
+
+        const fillColors = [
+            "fuchsia", "cyan", "lime", "magenta", "deepskyblue",
+            "yellow", "hotpink", "chartreuse", "orangered", "white"
+        ];
+        const strokeColors = [
+            "black", "white", "purple", "aqua", "blueviolet"
+        ];
+        const lineWidths = [0, 4, 2, 3, 6, 1, 5, 2];
+
+        function init() {
+            canvas = document.getElementById("square");
+            ctx = canvas.getContext("2d");
+        }
+
+        function startAnimation() {
+            if (animating) return;
+            animating = true;
+            pad = 0;
+            ctx.clearRect(0, 0, size, size);
+            animateLoop();
+        }
+
+        function animateLoop() {
+            const boxSize = size - pad * 2;
+
+            if (boxSize <= 0) {
+                // Reset effect
+                pad = 0;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }
+
+            const i = (pad / step) % fillColors.length;
+            const j = (pad / step) % strokeColors.length;
+            const k = (pad / step) % lineWidths.length;
+
+            const fill = fillColors[i];
+            const stroke = strokeColors[j];
+            const width = lineWidths[k];
+
+            if (fill) {
+                ctx.fillStyle = fill;
+                ctx.fillRect(pad, pad, boxSize, boxSize);
+            }
+
+            if (stroke) {
+                ctx.lineWidth = width;
+                ctx.strokeStyle = stroke;
+                ctx.strokeRect(pad, pad, boxSize, boxSize);
+            }
+
+            pad += step;
+            requestAnimationFrame(animateLoop);
+        }
+
+        window.onload = init;
+    </script>
+</head>
+<body>
+    <canvas id="square" width="500" height="500"></canvas>
+    <button onclick="startAnimation()"> Unicorn Flavored Black Hole</button>
+</body>
+</html>
+>>>>>>> 415ce477eb150ef674c79313568c506df47c1b9d

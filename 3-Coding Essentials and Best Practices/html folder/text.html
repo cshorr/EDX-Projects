@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -61,4 +62,69 @@ context.fillText("right", 250, 100);
 </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Drawing text</title>
+  <meta charset="utf-8"/>
+</head>
+<body>
+<style>
+    body {
+        background-color: rgb(167, 151, 139);
+    }
+</style>
+<canvas id="myCanvas" width=1200 height=1200>Your browser does not support the canvas tag.</canvas>
+
+<script type="text/javascript">
+    var canvas=document.getElementById('myCanvas');
+    var context=canvas.getContext('2d');
+
+    context.font = "bold 100pt Ariel"; 
+    context.lineWidth = 4;
+    context.strokeStyle = "green";
+    context.fillStyle = "yellow";
+    context.fillText("Hello World!",400,150, 500, 500  );
+    context.strokeText("Hello World!",400,150, 500, 500 );
+  
+    context.font = " bold 100pt Helvetica";
+    context.lineWidth = 4;
+    context.strokeStyle = "blue";
+    context.fillStyle = "orange";
+     context.fillText("Goodbye Cruel World!", 300,300, 420, 300);
+    context.strokeText("Goodbye Cruel World", 300,300, 420, 300); 
+    
+
+     context.stokeStyle = "#000000";
+context.lineWidth  = 2;
+context.beginPath();
+context.moveTo( 250, 0);
+context.lineTo( 250, 130);
+context.stroke();
+context.closePath();
+
+context.font      = "16px Verdana";
+context.fillStyle = "#000000";
+
+context.textAlign = "center";
+context.fillText("center", 250, 20);
+
+context.textAlign = "start";
+context.fillText("start", 250, 40);
+
+context.textAlign = "end";
+context.fillText("end", 250, 60);
+
+context.textAlign = "left";
+context.fillText("left", 250, 80);
+
+context.textAlign = "right";
+context.fillText("right", 250, 100);
+
+
+</script>
+
+</body>
+>>>>>>> 415ce477eb150ef674c79313568c506df47c1b9d
 </html>
