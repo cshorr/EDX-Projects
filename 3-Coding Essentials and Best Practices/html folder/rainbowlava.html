@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Unicorn Lava Flow</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(45deg, #ff00ff, #00ffff, #0000ff, #ff0000);
+      background-size: 600% 600%;
+      animation: trippyBg 20s linear infinite;
+      font-family: sans-serif;
+    }
+
+    @keyframes trippyBg {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    canvas {
+      display: block;
+      margin: 0 auto;
+      background-color: black;
+      border: 6px solid #444;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #start {
+      background: linear-gradient(to right, #ff00ff, #00ffff, #39ff14);
+      color: black;
+    }
+
+    #stop {
+      background: #ff4444;
+      color: white;
+    }
+
+    .slider-container {
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    input[type="range"] {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="square" width="1300" height="800"></canvas>
+  <div class="controls">
+    <button id="start" onclick="startAnimation()">Melt the Unicorn Core</button>
+    <button id="stop" onclick="stopAnimation()">STOP the Flow</button>
+    <div class="slider-container">
+      <label for="speedSlider">Speed:</label>
+      <input id="speedSlider" type="range" min="30" max="300" value="100" />
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById("square");
+    const ctx = canvas.getContext("2d");
+
+    const canvasWidth = canvas.width;
+    const canvasHeight = canvas.height;
+    const squareSize = 600; // define a centered square size
+
+    const step = 12;
+    let animating = false;
+    let animationFrame = null;
+    let delay = 100;
+
+    const colors = [
+      "#FF0000", "#FF6600", "#FFFF00", "#00FF00", "#00CED1",
+      "#00008B", "#9900FF", "#FF00FF", "#39FF14", "#FF1493",
+      "#444444", "#D3D3D3", "#228B22", "#1E90FF", "#B22222",
+      "#FF4500", "#DA70D6", "#00FA9A", "#8A2BE2", "#FFD700",
+      "#9932CC", "#87CEEB"
+    ];
+
+    document.getElementById("speedSlider").addEventListener("input", (e) => {
+      delay = parseInt(e.target.value);
+    });
+
+    function startAnimation() {
+      if (animating) return;
+      animating = true;
+      loopLava();
+    }
+
+    function stopAnimation() {
+      animating = false;
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
+    }
+
+    function loopLava() {
+      if (!animating) return;
+
+      ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+      const offsetX = (canvasWidth - squareSize) / 2;
+      let pad = 0;
+      const maxLayers = Math.floor(squareSize / (step * 2));
+
+      for (let i = 0; i < maxLayers; i++) {
+        const color = colors[i % colors.length];
+        const boxSize = squareSize - pad * 2;
+
+        ctx.fillStyle = color;
+        ctx.fillRect(offsetX + pad, pad, boxSize, boxSize);
+        pad += step;
+      }
+
+      // Optional: draw title in center
+      ctx.font = "bold 48pt Arial";
+      ctx.fillStyle = "white";
+      ctx.textAlign = "center";
+      ctx.fillText("Unicorn Lava Core", canvasWidth / 2, canvasHeight - 60);
+
+      colors.push(colors.shift());
+
+      setTimeout(() => {
+        animationFrame = requestAnimationFrame(loopLava);
+      }, delay);
+    }
+  </script>
+</body>
+</html>
